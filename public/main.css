@@ -1,0 +1,92 @@
+body {
+	font-family: 'Nunito', sans-serif;
+	background-color: #010f1b;
+}
+
+#chat-container {
+	max-width: 600px;
+	margin: 30px auto;
+	/* border: 1px solid #ddd; */
+	box-shadow: 1px 3px 1px 5px rgba(0, 0, 0, 0.99);
+}
+
+#chat-window {
+	padding: 14px 0;
+	margin: 0 20px;
+	/* border-bottom: 1px solid #c9c9c9; */
+	color: #555;
+}
+
+#output {
+	height: 500px;
+	overflow: auto;
+	object-fit: unset;
+	scroll-behavior: smooth;
+}
+#output p {
+	background: #0f7377 none repeat scroll 0 0;
+	border-radius: 10px;
+	color: white;
+	word-break: break-all;
+	margin: 0;
+	padding: 5px 20px 5px 20px;
+}
+#actions p {
+	padding: 14px 0;
+	margin: 0 20px;
+	border-bottom: 1px solid #c9c9c9;
+	color: #555;
+}
+
+input {
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: 0;
+	background: #ccc;
+	display: block;
+	width: 80%;
+	
+}
+
+
+button {
+	position: relative;
+	bottom: 37px;
+	float: right;
+	text-align: right;
+	background: #083271;
+	color: #fff;
+	font-size: 18px;
+	border: 0;
+	padding: 2% 5%;
+	width: 20%;
+	height: 40px;
+	border-radius: 0 0 2px 2px;
+}
+body::-webkit-scrollbar {
+	/* display: none; */
+	width: 10px;
+}
+#output::-webkit-scrollbar {
+	/* display: none; */
+	width: 10px;
+}
+#output::-webkit-scrollbar-thumb {
+	background: #00689e;
+	border-radius: 4px;
+}
+#output::-webkit-scrollbar-thumb:active {
+	background-color: #00689e;
+}
+#output::-webkit-scrollbar-thumb:hover {
+	background: #032e46;
+}
+#output::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 4px;
+}
+/* Cambiamos el fondo cuando esté en active o hover */
+#output::-webkit-scrollbar-track:hover,
+#output::-webkit-scrollbar-track:active {
+	background: #d4d4d4;
+}
